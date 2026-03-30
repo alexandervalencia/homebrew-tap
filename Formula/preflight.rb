@@ -60,12 +60,11 @@ class Preflight < Formula
     system ruby_bin/"gem", "install", "bundler", "--no-document",
            "--install-dir", libexec/"vendor/bundle"
 
-    system libexec/"vendor/bundle/bin/bundle", "install",
-           "--gemfile=#{libexec}/server/Gemfile",
-           "--path=#{libexec}/vendor/bundle",
-           "--without=development:test",
-           "--jobs=4",
-           "--retry=3"
+    bundle = libexec/"vendor/bundle/bin/bundle"
+    system bundle, "config", "set", "--local", "path", (libexec/"vendor/bundle").to_s
+    system bundle, "config", "set", "--local", "without", "development:test"
+    system bundle, "config", "set", "--local", "gemfile", (libexec/"server/Gemfile").to_s
+    system bundle, "install", "--jobs=4", "--retry=3"
   end
 
   def caveats
