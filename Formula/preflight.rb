@@ -1,9 +1,9 @@
 class Preflight < Formula
   desc "Review branches like GitHub PRs — before pushing upstream"
   homepage "https://github.com/alexandervalencia/preflight"
-  url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.1/preflight-server-v0.1.1.tar.gz"
-  sha256 "3c258829d0e52c7d46099f58982491496b8e6fa3d8a9a0be0750bcb3948a0b46"
-  version "0.1.1"
+  url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.2/preflight-server-v0.1.2.tar.gz"
+  sha256 "3b38cd95fba34236d0bd466eae7630a034a4e87b7858f295b8e4973a7662e878"
+  version "0.1.2"
   license "MIT"
 
   depends_on "ruby@3.4"
@@ -12,14 +12,14 @@ class Preflight < Formula
   on_macos do
     on_arm do
       resource "cli" do
-        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.1/preflight-darwin-arm64.tar.gz"
-        sha256 "a610ba9599967e64e73d5ab9e030e630050f47d02a3a37aecad8d8f9976880ee"
+        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.2/preflight-darwin-arm64.tar.gz"
+        sha256 "298b5e73551e802333f0182bd0265593546e55abc97dc5186e2967ee0f65048a"
       end
     end
     on_intel do
       resource "cli" do
-        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.1/preflight-darwin-amd64.tar.gz"
-        sha256 "6890a102ae96f25407e3b71a1096c2f9c2a17b93607eed372496a649ea08d640"
+        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.2/preflight-darwin-amd64.tar.gz"
+        sha256 "e2fd544add2003ac764b53d04f6f1d3dddb7a67682b7245c82d6a8553f116184"
       end
     end
   end
@@ -27,14 +27,14 @@ class Preflight < Formula
   on_linux do
     on_arm do
       resource "cli" do
-        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.1/preflight-linux-arm64.tar.gz"
-        sha256 "5b2f00b8979217252524e818ce6d1d79b07c3244f88b8c1d91c720c795797672"
+        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.2/preflight-linux-arm64.tar.gz"
+        sha256 "c584ca6b94390f263596a76e13bd1317ed0595e2d3547492f6e88c3f01657543"
       end
     end
     on_intel do
       resource "cli" do
-        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.1/preflight-linux-amd64.tar.gz"
-        sha256 "f856c2f552637ee5e1394582cca0fc773ddad16685b76f3bf893cfe195eb4211"
+        url "https://github.com/alexandervalencia/preflight/releases/download/v0.1.2/preflight-linux-amd64.tar.gz"
+        sha256 "1f3c9032cd43793fdf744f10266ebb8afb8edbcd745606ae3df539ab2933f178"
       end
     end
   end
