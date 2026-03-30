@@ -43,6 +43,7 @@ class Preflight < Formula
     # Install the Rails server (primary download)
     libexec.install Dir["*"]
     chmod 0755, libexec/"bin/start-server"
+    chmod 0755, libexec/"bin/run-rails"
 
     # Install the Go CLI binary
     resource("cli").stage do
