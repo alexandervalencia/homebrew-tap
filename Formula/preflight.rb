@@ -11,12 +11,12 @@ class Preflight < Formula
     if Hardware::CPU.arm?
       resource "cli" do
         url "https://github.com/alexandervalencia/preflight/releases/download/v#{version}/preflight-darwin-arm64.tar.gz"
-        sha256 "PLACEHOLDER"
+        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       end
     else
       resource "cli" do
         url "https://github.com/alexandervalencia/preflight/releases/download/v#{version}/preflight-darwin-amd64.tar.gz"
-        sha256 "PLACEHOLDER"
+        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       end
     end
   end
@@ -25,19 +25,19 @@ class Preflight < Formula
     if Hardware::CPU.arm?
       resource "cli" do
         url "https://github.com/alexandervalencia/preflight/releases/download/v#{version}/preflight-linux-arm64.tar.gz"
-        sha256 "PLACEHOLDER"
+        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       end
     else
       resource "cli" do
         url "https://github.com/alexandervalencia/preflight/releases/download/v#{version}/preflight-linux-amd64.tar.gz"
-        sha256 "PLACEHOLDER"
+        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       end
     end
   end
 
   resource "server" do
     url "https://github.com/alexandervalencia/preflight/releases/download/v#{version}/preflight-server-v#{version}.tar.gz"
-    sha256 "PLACEHOLDER"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
 
   def install
